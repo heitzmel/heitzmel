@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Feedback // begin easily</title>
+    <meta name="description" content="Elia Heitzmann"/>
+    <link rel="shortcut icon" href="./pictures/Favicon.png">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <header>
+        <div id="page-logo"> 
+            <a href="index.html" class="text-green">
+                learnAboutElia<span class="text-white">();</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/309.eliaa/" class="link-grey"> [Instagram] </a> </li>
+                <li><a href="https://www.linkedin.com/in/elia-heitzmann-504380245/" class="link-grey"> [LinkedIn] </a> </li>
+                <li><a href="C:\Dev\VSCode\feedback.html" class="link-grey"> [Feedback] </a> </li>
+                <li><span id="invertButton" class="link-darkgrey"> [Invert]</span> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><span><span>Feedback </span><span class="text-grey"> // begin easily</span></span></h1>
+        <p>
+           here you have your place to give some feedback. please be nice :). 
+        </p>
+        <br>
+        <form id="feedback-form" method="post" action="mailto:feedback@example.com?subject=Feedback" enctype="text/plain">
+            <div>
+              <label for="name">name</label>
+              <input type="name" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">e-mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="feedback">feedback</label>
+              <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+            <div>
+              <button type="submit" id="submit-btn">send</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="text-grey">
+            &copy; <span id="currentYear"></span> by Elia Heitzmann. All rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="js/feedback.js"></script> 
+</html>
